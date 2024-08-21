@@ -2,7 +2,7 @@
 
 ## Descrição do Desafio
 
-Este projeto foi desenvolvido como parte de um desafio para aplicar conhecimentos sobre a utilização do Nginx como proxy reverso. O objetivo principal é que, ao acessar o Nginx, ele faça uma chamada para uma aplicação Node.js, a qual adicionará um registro em um banco de dados MySQL, cadastrando um nome na tabela `people`.
+Este projeto foi desenvolvido como parte de um desafio para aplicar conhecimentos sobre a utilização do Nginx como proxy reverso, além de Docker e Docker Compose para orquestrar e otimizar a aplicação. O objetivo principal é que, ao acessar o Nginx, ele faça uma chamada para uma aplicação Node.js, a qual adicionará um registro em um banco de dados MySQL, cadastrando um nome na tabela `people`.
 
 ## Funcionalidades
 
