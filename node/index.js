@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 8080
+const port = 3000
 const config = {
     host: 'db',
     user: 'root',
@@ -12,7 +12,7 @@ const mysql = require('mysql')
 app.get('/', (req, res) => {
     const connection = mysql.createConnection(config);
 
-    const sqlInsert = `INSERT INTO people(name) values('Gabriel')`;
+    const sqlInsert = `INSERT INTO people(name) values('João')`;
     connection.query(sqlInsert, (err) => {
         if (err) throw err;
 
