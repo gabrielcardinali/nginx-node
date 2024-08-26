@@ -12,7 +12,7 @@ const mysql = require('mysql')
 app.get('/', (req, res) => {
     const connection = mysql.createConnection(config);
 
-    const sqlInsert = `INSERT INTO people(name) values('João')`;
+    const sqlInsert = `INSERT INTO people(name) values('Gabriel')`;
     connection.query(sqlInsert, (err) => {
         if (err) throw err;
 
