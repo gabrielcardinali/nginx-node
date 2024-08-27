@@ -2,7 +2,6 @@ services:
   app:
     build:
       context: ./node
-      # dockerfile: Dockerfile.prod
     container_name: app
     entrypoint: dockerize -wait tcp://db:3306 -timeout 20s sh -c "npm install && npm run start"
     networks:
@@ -28,7 +27,7 @@ services:
       - "8080:80"
 
   db:
-    image: mysql:5.7
+    image: mysql:9.0.1
     command: --innodb-use-native-aio=0
     container_name: db
     restart: always
